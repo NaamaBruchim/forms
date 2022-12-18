@@ -1,0 +1,128 @@
+body {
+    background-color: rgb(144, 207, 228);
+}
+
+a {
+    text-decoration: none;
+    color: unset;
+}
+
+h1 {
+    background-color: steelblue;
+    text-align: center;
+}
+
+#home-logo {
+    float: left;
+    width: 40px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    background-color: steelblue;
+    text-align: center;
+}
+
+img {
+    border-radius: 4px;
+    padding: 3px;
+    width: 180px;
+}
+
+.float-right {
+    float: right;
+}
+
+.float-left {
+    float: left;
+}
+
+
+/* .body-100 {
+    background-color: rgb(144, 207, 228);
+}
+
+.body-101 {
+    background-color: rgb(144, 207, 228);
+} */
+
+.with-border {
+    border: 1px solid blue;
+    padding: 2px 8px;
+}
+
+th {
+    word-wrap: break-word;
+}
+
+table,
+th,
+td {
+    border-collapse: collapse;
+    border: 1px solid brown;
+    text-align: left;
+}
+
+ul {
+    list-style-type: none;
+}
+
+ul,
+ol {
+    padding-inline-start: unset;
+    margin: 5px;
+}
+
+ol {
+    padding-inline-start: 5px;
+}
+
+li input {
+    margin-right: 5px;
+}
+
+
+/* .children {
+    text-align: left;
+    border: 1px solid brown;
+}
+
+.celery {
+    border: 1px solid brown;
+    width: 300px;
+} */
+
+button.contact {
+    background-color: cornflowerblue;
+    font-weight: bold;
+}
+
+button {
+    background-color: cornflowerblue;
+    font-size: 14px;
+    margin: 4px;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+#btn-pizza {
+    background-color: crimson;
+    color: white;
+}
+
+#btn-pizza:hover {
+    background-color: rgb(54, 168, 54);
+}
+
+button.contact:hover {
+    background-color: aqua;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
+.pizza-table {
+    text-align: center;
+    border: none;
+}

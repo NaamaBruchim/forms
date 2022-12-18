@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>101</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body class="body-101">
+
+    <h1>
+        <a href="index.html"><img src="img/home.png" alt="home" class="float-left" id="home-logo"></a>
+        <span>Employee Form</span>
+        <img src="/101/img/taxlogo.jpg" alt="tax-logo" class="float-right">
+    </h1>
+
+    <span class="with-border">mark ✓ in the checkboxes</span>
+
+    <h3 style="text-align:center">Year Of Tax: <label for="year"></label>
+        <select name="year" id="year">
+        <option value="2022">2022</option>
+        <option value="2021">2021</option>
+        <option value="2020">2020</option>
+    </select></h3>
+
+
+    <form action="https://formspree.io/f/xeqdyanw" method="POST" target="_blank">
+        <fieldset>
+            <legend>1. Employer details </legend>
+
+            Name of Employer: <input type="text" id="noemployer"> Address: <input type="text" id="add1"> Phone Number: <input type="text" id="phone"><br> Deduction Number: <input type="text" id="deduction">
+
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>2. Employee details</legend>
+            <table>
+                <tr>
+                    <td>
+                        Identity Number: <input type="number" id="id">
+                    </td>
+                    <td>
+                        Last Name: <input type="text" id="lastName">
+                    </td>
+                    <td>
+                        First Name: <input type="text" id="firstName">
+                    </td>
+                    <td>
+                        Address: <input type="text" id="add2">
+                    </td>
+                    <tr>
+                        <td style="text-align: center;">
+                            Date of Birth: <input type="date" id="dob" style="margin-left: 21px;">
+                        </td>
+                        <td style="text-align: center;">
+                            Gender: <input type="checkbox" id="gender" name="female" checked>
+                            <label for="gender">Female</label>
+
+
+                            <input type="checkbox" id="gender" name="male"> <label for="gender">Male</label>
+                        </td>
+                        <td style="text-align: center;">
+                            <label for="family-status">&nbsp; Family status: </label>
+                            <select id="family-status">
+                            <option value="s">Single</option>
+                            <option value="m">Married</option>
+                            <option value="d">Divorced</option>
+                            <option value="w">Widowed</option>
+                            <option value="sep">Separated</option>
+                            <option value="other">other</option>
+                        </select>
+                        </td>
+                    </tr>
+                </tr>
+            </table>
+        </fieldset><br>
+        <fieldset>
+            <legend>3. Children details (0-18)</legend>
+            <table class="children">
+                <tr>
+                    <th>Name</th>
+                    <th>Id</th>
+                    <th>Date of Birth</th>
+                    <th>I.d. photo attached</th>
+                    <th colspan="2">4. Details of my income </th>
+                </tr>
+                <tr>
+                    <td><input type="text"></td>
+                    <td><input type="number"></td>
+                    <td><input type="date"></td>
+                    <td><input type="file" id="id-child" accept=".jpg, .png, .jpeg, .pdf"></td>
+                    <td rowspan="3"> I get (mark ✓): <label for="salary"></label>
+                        <ul>
+                            <li><input type="checkbox">Monthly salary</li>
+                            <li><input type="checkbox">Half month salary</li>
+                            <li><input type="checkbox">Scholarship</li>
+                            <li><input type="checkbox">salary from another employer</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="text"></td>
+                    <td><input type="number"></td>
+                    <td><input type="date"></td>
+                    <td><input type="file" id="id-child" accept=".jpg, .png, .jpeg, .pdf"></td>
+                </tr>
+                <tr>
+                    <td><input type="text"></td>
+                    <td><input type="number"></td>
+                    <td><input type="date"></td>
+                    <td><input type="file" id="id-child" accept=".jpg, .png, .jpeg, .pdf"></td>
+                </tr>
+            </table>
+            <br>
+        </fieldset>
+        <fieldset>
+            <legend> 5. Details about partner</legend>
+            <tr>
+                <th>Id: <input type="number"></th>
+                <th>Last Name: <input type="text"></th>
+                <th>First Name: <input type="text"></th>
+                <th>Date of birth: <input type="date"></th>
+                <th>Passport number: <input type="number"></th>
+            </tr>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>6. Changes during the year (include all the changes that relevant to this form) </legend>
+            <tr>
+                <th>Change date <input type="date"></th>
+                <th>Details of the change <input type="text"></th>
+                <th>Date of declare <input type="date"></th>
+                <th>Employee signature <input type="text"></th>
+        </fieldset><br>
+        <fieldset>
+            <legend>7. Exemption or tax allowance as follows (mark ✓ in the checkbox)</legend>
+            <ol>
+                <li><input type="checkbox">I'm resident of Israel </li>
+                <li><input type="checkbox">I'm 100% handicapped/blind/etc</li>
+                <li><input type="checkbox">I'm a single parent </li>
+                <li><input type="checkbox">I'm a new immigrant (to Israel) since: <input type="date"> (date of Aliyah)</li>
+                <li><input type="checkbox">I'm a veteran </li>
+                <li><input type="checkbox">I'm paying alimony </li>
+                <li><input type="checkbox">I'm 16 years old but not 18 during this year</li>
+            </ol>
+        </fieldset>
+        <input type="submit">
+    </form>
+</body>
+
+</html>
